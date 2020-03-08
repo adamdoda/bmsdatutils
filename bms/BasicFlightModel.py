@@ -399,17 +399,13 @@ def save_dat(fm, filename):
 
 
 def _read_file(filename):
-    f = open(filename, "r")
-    content = f.read()
-    f.close()
-
-    return content
+    with open(filename, "r") as f:
+        return f.read()
 
 
 def _write_file(filename, content):
-    f = open(filename, "w")
-    f.write(content)
-    f.close()
+    with open(filename, "w") as f:
+        f.write(content)
 
 
 _c_aeropt_string = "aeropt"
