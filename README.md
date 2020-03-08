@@ -40,7 +40,7 @@ def main():
     plot_mach(fm.mach_breakpoints, fm.cd, 8)
     plt.show()
 
-    FM.save_dat(fm , "f16bk52_new.dat")
+    FM.save_dat(fm, "f16bk52_new.dat")
 ```
 
 ## Running the tests
