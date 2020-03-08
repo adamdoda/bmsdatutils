@@ -294,8 +294,6 @@ def save_dat(fm, filename):
 
         return header, footer
 
-    #    TODO this will remove extra options needs to be parsed and rewritten
-
     def ftt(value, spacing=11):
         return ('{:+' + str(spacing) + '.6f}').format(value)
 
